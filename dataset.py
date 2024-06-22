@@ -66,7 +66,6 @@ class BilingualDataset(Dataset):
         assert encoder_input.size(0) == self.seq_len
         assert decoder_input.size(0) == self.seq_len
         assert label.size(0) == self.seq_len
-
         return {
             "encoder_input": encoder_input, #(Seq_len)
             "decoder_input": decoder_input, #(Seq_len)
